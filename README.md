@@ -7,8 +7,7 @@ While MBT is a powerful test-design and test-execution approach, it often suffer
 
 The above issue is also applicable in the GraphWalker MBT tool. In fact, the development team of GraphWalker has already included a default simplistic fault tolerance mechanism in the GraphWalker code-base, called FailFastStrategy (see below).
 
-<a href=""><img src=" https://raw.githubusercontent.com/vgarousi/fault-tolerance-for-MBT/main/FailFastStrategy_class.png"
-                /></a>
+<img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/0ca3e60dfd6c3152c4552294bab59c8020dd25f8/FailFastStrategy_class.png" />
 
 (The original code listing of the above class can be found in the GraphWalker code-base [via this link]( https://github.com/GraphWalker/graphwalker-project/blob/master/graphwalker-core/src/main/java/org/graphwalker/core/machine/FailFastStrategy.java))
 
