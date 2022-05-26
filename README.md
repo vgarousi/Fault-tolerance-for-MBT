@@ -33,7 +33,6 @@ We have come up with two heuristics to tackle the above issue/challenge, as “f
 * (Industry partner:) [Alper Buğra Keleş](https://www.linkedin.com/in/alperbugrakeles/), [Testinium A.Ş.](https://testinium.com), Turkey
 * (Industry partner:) [Yunus Balaman](https://www.linkedin.com/in/yunus-balaman-100235159/), [Testinium A.Ş.](https://testinium.com), Turkey
 
-We at least two web applications under test to assess and validate the fault tolerance heuristics, developed in GraphWalker. One of the apps should be Testinium (https://testinium.io) on which the supervisor has worked since 2019, in a major project (see the video above); and we have its MBT suite already available open-source (https://github.com/vgarousi/MBTofTestinium).
 
 # Demo video
 We provide below a demo video of the fault-tolerance enhancements that we have developed for the MBT tool GraphWalker, when running MBT tests on a large System Under Test (SUT): [Testinium](https://testinium.io).
@@ -43,7 +42,8 @@ We provide below a demo video of the fault-tolerance enhancements that we have d
 
 YouTube video:  [youtu.be/6vSwHN7UDO4](https://youtu.be/6vSwHN7UDO4)
 
+Note: The MBT test suites of the SUT, Testinium, are also [open-source (in GitHub)](https://github.com/vgarousi/MBTofTestinium).
+
 # Design document
 We provide below the design document for the fault-tolerance enhancements that we have designed and developed:
-
-[PDF file of the design document](https://github.com/vgarousi/fault-tolerance-for-MBT/blob/8cd6dc061bb562b0fc243e114c358f5e34d134ff/Design%20document%20for%20GitHub-Fault%20tolerance%20for%20MBT.pdf). 
+[PDF file of the design document](https://github.com/vgarousi/fault-tolerance-for-MBT/blob/8cd6dc061bb562b0fc243e114c358f5e34d134ff/Design%20document%20for%20GitHub-Fault%20tolerance%20for%20MBT.pdf)
