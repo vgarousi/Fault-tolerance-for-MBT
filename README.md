@@ -31,15 +31,21 @@ We have come up with two heuristics to tackle the above issue/challenge, as “f
 To implement the fault-tolerance features, we have developed and added three new classes to [the GraphWalker code-base](https://github.com/GraphWalker/graphwalker-project), as follows:
 
 -`NodeStatus.java`: A new class under `graphwalker\core\machine\` 
+
 -`TryAgainStrategy.java`: A new class under `graphwalker\core\machine\` 
+
 -`BlackListStrategy.java`: A new class under `graphwalker\core\machine\` 
 
 And we have slightly modified the following existing classes, in [the GraphWalker code-base](https://github.com/GraphWalker/graphwalker-project):
 
 -`SimpleMachine.java`: An existing class under `graphwalker\core\machine\` 
+
 -`ExecutionContext.java`: An existing class under `graphwalker\core\machine\` 
+
 -`Context.java`: An existing class under `graphwalker\core\machine\` 
+
 -`MachineBase.java`: An existing class under `graphwalker\core\machine\` 
+
 -`Vertex.java`: An existing class under `graphwalker\core\model` 
 
 Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (can be found below).
