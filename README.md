@@ -42,6 +42,8 @@ And we have slightly modified the following existing classes, in [the GraphWalke
 - `MachineBase.java`: An existing class under `graphwalker\core\machine\` 
 - `Vertex.java`: An existing class under `graphwalker\core\model` 
 
+The Java code of the above classes can be found inside the folders `new classes` and `modified classes` in the repository.
+
 Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (PDF file can be found below).
 
 # Development team 
