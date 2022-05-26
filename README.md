@@ -46,4 +46,4 @@ Note: The MBT test suites of the SUT, Testinium, are also [open-source (in GitHu
 
 # Design document
 We provide below the design document for the fault-tolerance enhancements that we have designed and developed:
-[PDF file of the design document](https://github.com/vgarousi/fault-tolerance-for-MBT/blob/8cd6dc061bb562b0fc243e114c358f5e34d134ff/Design%20document%20for%20GitHub-Fault%20tolerance%20for%20MBT.pdf)
+[PDF file of the design document](https://github.com/vgarousi/fault-tolerance-for-MBT/blob/399d6f98273a851511549b3fe31821935663d144/Design%20document%20for%20GitHub-Fault%20tolerance%20for%20MBT-May%2026.pdf)
