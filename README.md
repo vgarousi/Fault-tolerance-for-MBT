@@ -18,7 +18,8 @@ While MBT is a powerful test-design and test-execution approach, it often suffer
 
 The above issue is also applicable in the GraphWalker MBT tool. In fact, the development team of GraphWalker has already included a default simplistic fault tolerance mechanism in the GraphWalker code-base, called FailFastStrategy (see below).
 
-<img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/0ca3e60dfd6c3152c4552294bab59c8020dd25f8/FailFastStrategy_class.png" />
+<img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/0ca3e60dfd6c3152c4552294bab59c8020dd25f8/FailFastStrategy_class.png" 
+ width="600"/>
 
 (The original code listing of the above class can be found in the GraphWalker code-base [via this link]( https://github.com/GraphWalker/graphwalker-project/blob/master/graphwalker-core/src/main/java/org/graphwalker/core/machine/FailFastStrategy.java))
 
@@ -39,6 +40,8 @@ We provide below a demo video of the fault-tolerance enhancements that we have d
 
 <a href="https://youtu.be/6vSwHN7UDO4" target="_blank"><img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/54a8058b3e97ebf46b72428254190c16ad481877/Video_snapshot.png" 
  width="400" /></a>
+
+YouTube video:  [youtu.be/6vSwHN7UDO4](https://youtu.be/6vSwHN7UDO4)
 
 # Design document
 We share below the design document for the fault-tolerance enhancements that we have developed. The PDF file can be found [here](https://github.com/vgarousi/MBTCover/blob/master/docs/MBTCover-User%20guide%20and%20Design%20document-May%2010.pdf). 
