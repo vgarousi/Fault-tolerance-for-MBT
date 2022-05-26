@@ -39,9 +39,11 @@ We at least two web applications under test to assess and validate the fault tol
 We provide below a demo video of the fault-tolerance enhancements that we have developed for the MBT tool GraphWalker, when running MBT tests on a large System Under Test (SUT): [Testinium](https://testinium.io).
 
 <a href="https://youtu.be/6vSwHN7UDO4" target="_blank"><img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/54a8058b3e97ebf46b72428254190c16ad481877/Video_snapshot.png" 
- width="400" /></a>
+ width="500" /></a>
 
 YouTube video:  [youtu.be/6vSwHN7UDO4](https://youtu.be/6vSwHN7UDO4)
 
 # Design document
-We share below the design document for the fault-tolerance enhancements that we have developed. The PDF file can be found [here](https://github.com/vgarousi/MBTCover/blob/master/docs/MBTCover-User%20guide%20and%20Design%20document-May%2010.pdf). 
+We provide below the design document for the fault-tolerance enhancements that we have designed and developed:
+
+[PDF file of the design document](https://github.com/vgarousi/fault-tolerance-for-MBT/blob/8cd6dc061bb562b0fc243e114c358f5e34d134ff/Design%20document%20for%20GitHub-Fault%20tolerance%20for%20MBT.pdf). 
