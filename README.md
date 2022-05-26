@@ -1,4 +1,2 @@
 # Fault-tolerance enhancement for the Model-based Testing (MBT) tool GraphWalker 
-MBTCover is a tool for code-level and requirement-level test coverage measurement of model-based testing. 
-# Introduction
-MBTCover is a tool for code-level and requirement-level test coverage measurement of model-based testing. 
+Model-based Testing (MBT) is a popular automated testing approach, and is used in many industrial settings, e.g., [an experience report from the web applications domain](www.arxiv.org/pdf/2104.02152), and [a demo video] (youtu.be/RizUbMhBTho). There are literally [hundreds of MBT tools available] (https://www.google.com/search?q=Model-based+Testing+tool), either as free/open-source or commercial. 
