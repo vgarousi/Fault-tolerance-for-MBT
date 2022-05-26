@@ -27,6 +27,21 @@ But as we can see, the FailFastStrategy is very simplistic and is not going to b
 
 We have come up with two heuristics to tackle the above issue/challenge, as “fault tolerance” features for the MBT tool GraphWalker: (1) when an assertion (developed using Selenium) in a model node fails, go back from the current node to the previous node and execute the failed node / edge again immediately; this is because sometimes fails are undeterministic (doe to the so-called [“flaky” tests](https://www.google.com/search?q=flaky+tests)) and the assertion may pass the second time executing the node; (2) when an assertion in a model node fails, go back from the current node to the previous node and continue the MBT execution from there to other nodes, and making sure to “flag” such failed nodes, and not to visit them again – in a “Black” (no-visit) list.
 
+# Technical details: Development of three new classes and modifications to five existing classes in GraphWalker
+To implement the fault-tolerance features, we have developed and added three classes ot the code-base, as follows:
+
+-NodeStatus.java: A new class under graphwalker\core\machine\
+-TryAgainStrategy.java: A new class under graphwalker\core\machine\
+-BlackListStrategy.java: A new class under graphwalker\core\machine\
+
+And we have slightly modified the following classes:
+-SimpleMachine.java: under graphwalker\core\machine\
+ExecutionContext.java: under graphwalker\core\machine\
+Context.java: under graphwalker\core\machine\
+MachineBase.java: under graphwalker\core\machine\
+Vertex.java: under graphwalker\core\model
+
+Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (can be found below).
 # Development team 
 * (Team lead): [Dr. Vahid Garousi](https://www.vgarousi.com), Professor of Software Engineering and Senior Consultant, UK
 * (Developer:) [Glen O'Donovan](https://www.linkedin.com/in/glen-odonovan), Final-year BSc student in Queen’s University Belfast (QUB), UK
