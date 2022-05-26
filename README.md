@@ -1,4 +1,5 @@
-##Short introduction
+# Fault-tolerance enhancement for the Model-based Testing (MBT) tool GraphWalker 
+## Short introduction
 
 Model-based Testing (MBT) is a popular automated testing approach, used in many industrial settings. 
 
@@ -7,7 +8,8 @@ While MBT is a powerful test-design and test-execution approach, it often suffer
 We have come up with two heuristics to tackle the above issue/challenge, as “fault tolerance” features for the MBT tool GraphWalker: (1) when an assertion (developed using Selenium) in a model node fails, go back from the current node to the previous node and execute the failed node / edge again immediately; this is because sometimes fails are undeterministic (doe to the so-called [“flaky” tests](https://www.google.com/search?q=flaky+tests)) and the assertion may pass the second time executing the node; (2) when an assertion in a model node fails, go back from the current node to the previous node and continue the MBT execution from there to other nodes, and making sure to “flag” such failed nodes, and not to visit them again – in a “Black” (no-visit) list.
 
 In this repository, we provide the code and design document for the above two fault-tolerance enhancements.
-##Longer introduction and the need for this tool
+
+## Longer introduction and the need for this tool
 
 Model-based Testing (MBT) is a popular automated testing approach, and is used in many industrial settings, e.g., [an experience report from the web applications domain](https://arxiv.org/abs/2104.02152), and [a demo video](https://youtu.be/RizUbMhBTho). There are literally [hundreds of MBT tools available](https://www.google.com/search?q=Model-based+Testing+tool), either as free/open-source or commercial. 
 
