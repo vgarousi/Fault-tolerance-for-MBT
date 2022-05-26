@@ -36,17 +36,13 @@ To implement the fault-tolerance features, we have developed and added three new
 
 And we have slightly modified the following existing classes, in [the GraphWalker code-base](https://github.com/GraphWalker/graphwalker-project):
 
--`SimpleMachine.java`: An existing class under `graphwalker\core\machine\` 
+- `SimpleMachine.java`: An existing class under `graphwalker\core\machine\` 
+- `ExecutionContext.java`: An existing class under `graphwalker\core\machine\` 
+- `Context.java`: An existing class under `graphwalker\core\machine\` 
+- `MachineBase.java`: An existing class under `graphwalker\core\machine\` 
+- `Vertex.java`: An existing class under `graphwalker\core\model` 
 
--`ExecutionContext.java`: An existing class under `graphwalker\core\machine\` 
-
--`Context.java`: An existing class under `graphwalker\core\machine\` 
-
--`MachineBase.java`: An existing class under `graphwalker\core\machine\` 
-
--`Vertex.java`: An existing class under `graphwalker\core\model` 
-
-Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (can be found below).
+Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (PDF file can be found below).
 
 # Development team 
 * (Team lead): [Dr. Vahid Garousi](https://www.vgarousi.com), Professor of Software Engineering and Senior Consultant, UK
