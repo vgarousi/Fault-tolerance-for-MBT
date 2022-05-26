@@ -6,7 +6,9 @@ One of the MBT tools, that is used quite widely for testing web and mobile apps,
 While MBT is a powerful test-design and test-execution approach, it often suffers from a limitation: when an assertion fails in a given node of a test models, execution of the test model would stop altogether, and test execution would not continue from other parts of the model. This is in contrary to test scripts in JUnit for example, in which if an assertion in a JUnit test method fails, other JUnit test methods will continue their execution. 
 
 The above issue is also applicable in the GraphWalker MBT tool. In fact, the development team of GraphWalker has already included a default simplistic fault tolerance mechanism in the GraphWalker code-base, called FailFastStrategy (see below).
-<img src=" https://raw.githubusercontent.com/vgarousi/fault-tolerance-for-MBT/main/FailFastStrategy_class.png"/>
+
+<a href=""><img src=" https://raw.githubusercontent.com/vgarousi/fault-tolerance-for-MBT/main/FailFastStrategy_class.png"
+                /></a>
 
 (The original code listing of the above class can be found in the GraphWalker code-base [via this link]( https://github.com/GraphWalker/graphwalker-project/blob/master/graphwalker-core/src/main/java/org/graphwalker/core/machine/FailFastStrategy.java))
 
