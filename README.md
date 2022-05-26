@@ -21,26 +21,26 @@ The above issue is also applicable in the GraphWalker MBT tool. In fact, the dev
 <img src="https://github.com/vgarousi/fault-tolerance-for-MBT/blob/0ca3e60dfd6c3152c4552294bab59c8020dd25f8/FailFastStrategy_class.png" 
  width="600"/>
 
-(The original code listing of the above class can be found in the GraphWalker code-base [via this link]( https://github.com/GraphWalker/graphwalker-project/blob/master/graphwalker-core/src/main/java/org/graphwalker/core/machine/FailFastStrategy.java))
+(The original code listing of the above class can be found in the GraphWalker code-base [via this link](https://github.com/GraphWalker/graphwalker-project/blob/master/graphwalker-core/src/main/java/org/graphwalker/core/machine/FailFastStrategy.java))
 
 But as we can see, the FailFastStrategy is very simplistic and is not going to be helpful in large MBT projects, since stopping the MBT execution for a single test failure is going to stop the entire MBT suite and stop testing of the other parts of the System Under Test (SUT) using the MBT test suite. Thus, to make MBT more useful and usable for large test automation projects, it is important for test engineers to declare and implement their own fault tolerance mechanisms/ heuristics. That is what we have done in this project. 
 
 We have come up with two heuristics to tackle the above issue/challenge, as “fault tolerance” features for the MBT tool GraphWalker: (1) when an assertion (developed using Selenium) in a model node fails, go back from the current node to the previous node and execute the failed node / edge again immediately; this is because sometimes fails are undeterministic (doe to the so-called [“flaky” tests](https://www.google.com/search?q=flaky+tests)) and the assertion may pass the second time executing the node; (2) when an assertion in a model node fails, go back from the current node to the previous node and continue the MBT execution from there to other nodes, and making sure to “flag” such failed nodes, and not to visit them again – in a “Black” (no-visit) list.
 
 # Technical details: Development of three new classes and modifications to five existing classes in GraphWalker
-To implement the fault-tolerance features, we have developed and added three classes ot the code-base, as follows:
+To implement the fault-tolerance features, we have developed and added three classes ot in [the GraphWalker code-base](https://github.com/GraphWalker/graphwalker-project), as follows:
 
--`NodeStatus.java`: A new class under graphwalker\core\machine\
--`TryAgainStrategy.java`: A new class under graphwalker\core\machine\
--BlackListStrategy.java: A new class under graphwalker\core\machine\
+-`NodeStatus.java`: A new class under `graphwalker\core\machine\`
+-`TryAgainStrategy.java`: A new class under `graphwalker\core\machine\`
+-`BlackListStrategy.java`: A new class under `graphwalker\core\machine\`
 
-And we have slightly modified the following classes:
+And we have slightly modified the following existing classes, in [the GraphWalker code-base](https://github.com/GraphWalker/graphwalker-project):
 
--'SimpleMachine.java': under graphwalker\core\machine\
--'ExecutionContext.java': under graphwalker\core\machine\
--Context.java: under graphwalker\core\machine\
--MachineBase.java: under graphwalker\core\machine\
--Vertex.java: under graphwalker\core\model
+-`SimpleMachine.java`: An existing class under `graphwalker\core\machine\`
+-`ExecutionContext.java`: An existing class under `graphwalker\core\machine\`
+-`Context.java`: An existing class under `graphwalker\core\machine\`
+-`MachineBase.java`: An existing class under `graphwalker\core\machine\`
+-`Vertex.java`: An existing class under `graphwalker\core\model`
 
 Note: Details of the code modifications and the new class implementations are discussed in Section 4.3 of the design document (can be found below).
 
