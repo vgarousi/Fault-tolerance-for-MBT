@@ -30,8 +30,8 @@ We have come up with two heuristics to tackle the above issue/challenge, as “f
 # Technical details: Development of three new classes and modifications to five existing classes in GraphWalker
 To implement the fault-tolerance features, we have developed and added three classes ot the code-base, as follows:
 
--'NodeStatus.java': A new class under graphwalker\core\machine\
--TryAgainStrategy.java: A new class under graphwalker\core\machine\
+-`NodeStatus.java`: A new class under graphwalker\core\machine\
+-`TryAgainStrategy.java`: A new class under graphwalker\core\machine\
 -BlackListStrategy.java: A new class under graphwalker\core\machine\
 
 And we have slightly modified the following classes:
